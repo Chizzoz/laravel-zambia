@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: My second post of the day
 ---
 ## A New Post
