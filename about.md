@@ -2,6 +2,7 @@
 layout: page
 title: About Laravel Zambia Community
 subtitle: A brief about this project
+bigimg: /img/Laravel-Community-Zambia-Bottom-Right-Corner-Logo.png
 ---
 
 ### About
