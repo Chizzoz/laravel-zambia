@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About Laravel Zambia Community
-subtitle: Why you'd want to go on a date with me
+subtitle: A brief about this project
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### About
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+“Love beautiful code? We do too. The PHP Framework For Web Artisans…”
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+This is a platform dedicated to Zambian developers, beginners, students and enthusiasts focusing on the Laravel framework and other related technologies such VueJS, NodeJS, CSS frontend framework integration and anything else you can think of in relation to Laravel. Feel free to interact with other members, share tips or helpful content and assist in solving problems.
