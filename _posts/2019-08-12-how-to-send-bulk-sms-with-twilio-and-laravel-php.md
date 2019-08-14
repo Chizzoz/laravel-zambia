@@ -91,7 +91,7 @@ Open up ```web.php``` located in the ```routes``` folder and paste in the follow
 Route::view('/bulksms', 'bulksms');
 Route::post('/bulksms', 'BulkSmsController@sendSms');
 ```
-
+Now we will write a function to validate our HTML form and send out the text messages. Open up the ```BulkSmsController.php``` file located at ```app/Http/Controllers``` folder and type in the following code before the last curly brace.
 
 
 
