@@ -145,6 +145,9 @@ $ php artisan serve
 
 Now using your preferred browser visit http://localhost:8000/bulksms, fill out the form and submit.
 
+### Conclusion
+Now that you have set up a Bulk SMS sending app you can see how easy it is extend the SMS functionality. This gives you an advantage of having your phone numbers stored in your own database.
+
 
 
 
