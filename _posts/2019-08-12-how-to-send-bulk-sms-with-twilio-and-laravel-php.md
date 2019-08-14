@@ -83,7 +83,14 @@ Open up the newly created file located at resources/views/bulksms.blade.php and 
     </body>
 </html>
   ```
+Open up ```web.php``` located in the ```routes``` folder and paste in the following code at the bottom:
 
+```php
+<?php
+
+Route::view('/bulksms', 'bulksms');
+Route::post('/bulksms', 'BulkSmsController@sendSms');
+```
 
 
 
