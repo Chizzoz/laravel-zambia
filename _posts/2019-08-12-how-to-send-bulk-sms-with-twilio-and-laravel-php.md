@@ -143,6 +143,8 @@ To test your app open up your console in the project directory and type in follo
 $ php artisan serve
 ```
 
+Now using your preferred browser visit http://localhost:8000/bulksms, fill out the form and submit.
+
 
 
 
