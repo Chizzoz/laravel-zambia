@@ -48,3 +48,118 @@ use Illuminate\Http\Request;
 use Twilio\Rest\Client;
 use Validator;
 ```
+
+Next we will create a view file called bulksms.blade.php to make an HTML form to create the necessary fields for our bulk SMS app.
+
+```console
+$ touch resources/views/bulksms.blade.php
+```
+Open up the newly created file located at resources/views/bulksms.blade.php and paste in the code below:
+
+```html
+<html>
+      <body>
+         <form action='' method='post'>
+              @csrf
+                      @if($errors->any())
+              <ul>
+             @foreach($errors->all() as $error)
+            <li> {{ $error }} </li>
+             @endforeach
+        @endif
+
+        @if( session( 'success' ) )
+             {{ session( 'success' ) }}
+        @endif
+
+             <label>Phone numbers (seperate with a comma [,])</label>
+             <input type='text' name='numbers' />
+
+            <label>Message</label>
+            <textarea name='message'></textarea>
+
+            <button type='submit'>Send!</button>
+      </form>
+    </body>
+</html>
+  ```
+Open up ```web.php``` located in the ```routes``` folder and paste in the following code at the bottom:
+
+```php
+<?php
+
+Route::view('/bulksms', 'bulksms');
+Route::post('/bulksms', 'BulkSmsController@sendSms');
+```
+Now we will write a function to validate our HTML form and send out the text messages. Open up the ```BulkSmsController.php``` file located at ```app/Http/Controllers``` folder and type in the following code before the last curly brace.
+
+```php
+<?php
+
+        public function sendSms( Request $request )
+    {
+       // Your Account SID and Auth Token from twilio.com/console
+       $sid    = env( 'TWILIO_SID' );
+       $token  = env( 'TWILIO_TOKEN' );
+       $client = new Client( $sid, $token );
+
+       $validator = Validator::make($request->all(), [
+           'numbers' => 'required',
+           'message' => 'required'
+       ]);
+
+       if ( $validator->passes() ) {
+
+           $numbers_in_arrays = explode( ',' , $request->input( 'numbers' ) );
+
+           $message = $request->input( 'message' );
+           $count = 0;
+
+           foreach( $numbers_in_arrays as $number )
+           {
+               $count++;
+
+               $client->messages->create(
+                   $number,
+                   [
+                       'from' => env( 'TWILIO_FROM' ),
+                       'body' => $message,
+                   ]
+               );
+           }
+
+           return back()->with( 'success', $count . " messages sent!" );
+              
+       } else {
+           return back()->withErrors( $validator );
+       }
+   }
+   ```
+##Testing
+
+To test your app open up your console in the project directory and type in following command:
+
+```console
+$ php artisan serve
+```
+
+Now using your preferred browser visit http://localhost:8000/bulksms, fill out the form and submit.
+
+### Conclusion
+Now that you have set up a Bulk SMS sending app you can see how easy it is extend the SMS functionality. This gives you an advantage of having your phone numbers stored in your own database.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
