@@ -48,3 +48,57 @@ use Illuminate\Http\Request;
 use Twilio\Rest\Client;
 use Validator;
 ```
+
+Next we will create a view file called bulksms.blade.php to make an HTML form to create the necessary fields for our bulk SMS app.
+
+```console
+$ touch resources/views/bulksms.blade.php
+```
+Open up the newly created file located at resources/views/bulksms.blade.php and paste in the code below:
+
+```html
+<html>
+      <body>
+         <form action='' method='post'>
+              @csrf
+                      @if($errors->any())
+              <ul>
+             @foreach($errors->all() as $error)
+            <li> {{ $error }} </li>
+             @endforeach
+        @endif
+
+        @if( session( 'success' ) )
+             {{ session( 'success' ) }}
+        @endif
+
+             <label>Phone numbers (seperate with a comma [,])</label>
+             <input type='text' name='numbers' />
+
+            <label>Message</label>
+            <textarea name='message'></textarea>
+
+            <button type='submit'>Send!</button>
+      </form>
+    </body>
+</html>
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
