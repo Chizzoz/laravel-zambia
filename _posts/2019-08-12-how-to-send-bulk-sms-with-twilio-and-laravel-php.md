@@ -135,7 +135,13 @@ Now we will write a function to validate our HTML form and send out the text mes
        }
    }
    ```
+##Testing
 
+To test your app open up your console in the project directory and type in following command:
+
+```console
+$ php artisan serve
+```
 
 
 
