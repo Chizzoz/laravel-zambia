@@ -124,7 +124,7 @@ url-pretty: "https://www.facebook.com/groups/1859854407653011"  # eg. "deanattal
 #just-comments: "ABCD-EFGH-IJKL"
 
 # To use Facebook Comments, fill in a Facebook App ID
-# fb_comment_id: ""
+fb_comment_id: "507903873350657"
 
 # To use Staticman comments, fill in repository, branch, and endpoint
 staticman:
@@ -140,7 +140,7 @@ staticman:
 # --- Misc --- #
 
 # Facebook App ID
-# fb_app_id: ""
+fb_app_id: "507903873350657"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
