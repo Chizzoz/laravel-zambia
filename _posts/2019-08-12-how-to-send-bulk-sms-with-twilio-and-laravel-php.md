@@ -42,6 +42,7 @@ $ php artisan make:controller BulkSmsController
 Open the controller and include the Twilio class at the top:
 
 ```php
+<?php
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
