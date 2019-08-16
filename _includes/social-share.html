@@ -37,13 +37,18 @@
     </a>
   {% endif %}
   
-   {% if site.share-links-active.cynojine %}
-  <!--- Share on cynojine -->
-    <a href="https://app.cynojine.com/sharer?url={{ page.url | absolute_url | url_encode }}"
-      class="btn btn-social-icon btn-linkedin" title="Share on cynojine">
-      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
-      <span class="sr-only">Cynojine</span>
-    </a>
+  {% if site.share-links-active.cynojine %}
+    <!--- Share on cynojine -->
+    <script>
+      function OpenWindow(url, windowName) {
+        newwindow = window.open('https://app.cynojine.com/sharer?url=' + url, windowName, 'height=600,width=800');
+        if (window.focus) {
+            newwindow.focus();
+        }
+        return false;
+      }
+    </script>
+    <button onclick="OpenWindow('{{ page.url | absolute_url | url_encode }}')">Cynojine</button>
   {% endif %}
 </section>
 
