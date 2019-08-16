@@ -48,7 +48,7 @@
         return false;
       }
     </script>
-    <button onclick="OpenWindow('{{ page.url | absolute_url | url_encode }}')">Cynojine</button>
+    <button onclick="OpenWindow('{{ page.title }} : {{ page.url | absolute_url | url_encode }}')">Cynojine</button>
   {% endif %}
 </section>
 
