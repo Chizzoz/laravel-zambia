@@ -3,7 +3,7 @@ layout: post
 published: false
 title: Sending Sms with Cynsms Using laravel
 ---
-## A New Post
+## Sending Sms with Cynsms Using laravel
 
 ## Technical Requirements
 For this tutorial we’ll assume you already know or have the following:
