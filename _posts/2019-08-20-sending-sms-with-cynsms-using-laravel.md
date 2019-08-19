@@ -135,3 +135,76 @@ $sms_body = array(
     'voice' => $voice,
 );
 ```
+// Create MMS SMS Body for request
+```php
+$sms_body = array(
+    'api_key' => $api_key,
+    'to' => $destination,
+    'from' => $from,
+    'sms' => $sms, //optional
+    'mms' => $mms,
+    'media_url' => $media_url,
+);
+```
+// Create Schedule SMS Body for request
+```php
+$sms_body = array(
+    'api_key' => $api_key,
+    'to' => $destination,
+    'from' => $from,
+    'sms' => $sms,
+    'schedule' => $schedule_date,
+);
+```
+
+### Step 6: 
+Instantiate a new Cyn SMS API request
+```php
+$client = new CynSMSAPI();
+```
+
+## Send SMS
+Finally send your sms through Ultimate SMS API
+```php
+$response = $client->send_sms($sms_body, $url);
+```
+
+## Get Inbox
+Get your all message
+```php
+$get_inbox=$client->get_inbox($api_key,$url);
+```
+
+## Get Balance
+Get your account balance
+```php
+$get_balance=$client->check_balance($api_key,$url);
+```
+## Response
+Cyn SMS API return response with `json` format, like:
+
+```json
+{"code":"ok","message":"Successfully Send"}
+```
+
+## Status Code
+
+| Status | Message |
+| --- | --- |
+| `ok` | Successfully Send |
+| `100` | Bad gateway requested |
+| `101` | Wrong action |
+| `102` | Authentication failed |
+| `103` | Invalid phone number |
+| `104` | Phone coverage not active |
+| `105` | Insufficient balance |
+| `106` | Invalid Sender ID |
+| `107` | Invalid SMS Type |
+| `108` | SMS Gateway not active |
+| `109` | Invalid Schedule Time |
+| `110` | Media url required |
+| `111` | SMS contain spam word. Wait for approval |
+
+## Authors
+
+* **Kazashim** - *Initial work* - [cynojine](https://github.com/cynojine)
