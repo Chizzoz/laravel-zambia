@@ -84,5 +84,5 @@ in your serminal nervigate to your project folder and type ``php artisan make:au
 $ cd blog
 $ blog> php artisan make:auth
 ```
-
+When its done nervigate to `` Resources > Views `` you will see that a new folder was created and contains some files in it. 
 
