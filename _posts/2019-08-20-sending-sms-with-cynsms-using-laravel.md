@@ -45,3 +45,17 @@ And Via Bash
 git clone https://github.com/cynojine/cynsms-api.git
 ```
 
+## Usage
+
+
+ ### Step 1:
+If install Cyn SMS API using Git Clone then load your Cyn SMS API Class file and Use namespace. 
+```php
+require_once 'src/Class_Cyn_SMS_API.php';
+use CynSMS\CynSMSAPI;
+```
+If install Cyn SMS API using Composer then Require/Include autoload.php file in the index.php of your project or whatever file you need to use **Cyn SMS API** classes:. 
+```php
+require 'vendor/autoload.php';
+use CynSMS\CynSMSAPI;
+```
