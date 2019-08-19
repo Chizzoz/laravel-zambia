@@ -105,3 +105,33 @@ $media_url = 'https://yourmediaurl.com'; //Insert your media url
 ```php
 $schedule_date = '09/17/2018 10:20 AM'; //Date like this format: m/d/Y h:i A
 ```
+// Create Plain/text SMS Body for request
+```php
+$sms_body = array(
+    'api_key' => $api_key,
+    'to' => $destination,
+    'from' => $from,
+    'sms' => $sms
+);
+```
+// Create Unicode SMS Body for request
+```php
+$sms_body = array(
+    'api_key' => $api_key,
+    'to' => $destination,
+    'from' => $from,
+    'sms' => $sms,
+    'unicode' => $unicode,
+);
+```
+
+// Create Voice SMS Body for request
+```php
+$sms_body = array(
+    'api_key' => $api_key,
+    'to' => $destination,
+    'from' => $from,
+    'sms' => $sms,
+    'voice' => $voice,
+);
+```
