@@ -18,6 +18,6 @@ For this tutorial we’ll assume you already know or have the following:
 Just in case you don’t have a Laravel project setup, this guide will help you to [create a new Laravel project locally.](https://laravel.com/docs/5.7#installing-laravel)
 
 ### Install and Configure the Cynsms SDK
-The first thing we need to do is install the Twilio Laravel SDK which will provide the needed functions to get our bulk SMS app started. We’ll use the command line to achieve that. So in the command line type:
+The first thing we need to do is install the Cynsms SDK which will provide the needed functions to get our SMS app started. We’ll use the command line to achieve that. So in the command line type:
 
 
