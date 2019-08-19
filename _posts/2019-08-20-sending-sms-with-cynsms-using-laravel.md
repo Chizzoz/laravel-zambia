@@ -59,3 +59,25 @@ If install Cyn SMS API using Composer then Require/Include autoload.php file in 
 require 'vendor/autoload.php';
 use CynSMS\CynSMSAPI;
 ```
+### Step 2:
+set your API_KEY from `https://mywebhost.com/sms-api/info` (your application install url)
+```php
+$api_key = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
+```
+### Step 3:
+Change the from number below. It can be a valid phone number or a String
+```php
+$from = '2699655847554';
+```
+
+### Step 4:
+the number we are sending to - Any phone number
+```php
+$destination = '8801810000000';
+```
+You have to must include Country code at beginning of the phone number.  
+
+### Step 5:
+Replace your Install URL like `https://mywebhost.com/sms/api` with `https://cynsms.online/`
+`sms/api` is mandatory on your install url
+
