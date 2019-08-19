@@ -33,4 +33,15 @@ For more details please visit: [Cyn SMS](https://cynsms.online/)
 php >=5.6
 Cyn SMS - Bulk SMS Application For Markting
 ```
+### Installing
+Via Composer
+```
+composer require cynojine/cynsms-api 
+```
+
+And Via Bash
+
+```
+git clone https://github.com/cynojine/cynsms-api.git
+```
 
