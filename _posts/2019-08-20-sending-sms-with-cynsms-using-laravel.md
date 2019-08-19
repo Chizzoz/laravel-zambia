@@ -60,7 +60,7 @@ require 'vendor/autoload.php';
 use CynSMS\CynSMSAPI;
 ```
 ### Step 2:
-set your API_KEY from `https://cynsms/sms-api/info` 
+set your API_KEY from `https://cynsms.online/sms-api/info` 
 ```php
 $api_key = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
 ```
