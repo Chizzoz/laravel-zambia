@@ -17,5 +17,14 @@ For this tutorial we’ll assume you already know or have the following:
 - You have an existing Laravel (5+) project
 - You need to have Xampp or wamp installed [Download Xampp From here.](https://www.apachefriends.org/download.html)
 
-
 Just in case you don’t have a Laravel project setup, this guide will help you to [create a new Laravel project locally.](https://laravel.com/docs/5.7#installing-laravel)
+
+Now lets dive into our project. Am sure you have created your laravel project.
+
+### Step 1
+
+We are going to create our database  ```demologin``` am sure you are familier with xampp and phpmyadmin
+
+
+
+
