@@ -75,4 +75,14 @@ class AppServiceProvider extends ServiceProvider
 }
 
 ```
+### Step 4
+
+In this step we are going to create the Auth system using ``artisan`` we will use our terminal to add that.
+in your serminal nervigate to your project folder and type ``php artisan make:auth``
+
+```console
+$ cd blog
+$ blog> php artisan make:auth
+```
+
 
