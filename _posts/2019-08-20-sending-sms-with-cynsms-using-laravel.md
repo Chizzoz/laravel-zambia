@@ -81,3 +81,27 @@ You have to must include Country code at beginning of the phone number.
 Replace your Install URL like `https://mywebhost.com/sms/api` with `https://cynsms.online/`
 `sms/api` is mandatory on your install url
 
+```php
+$url = 'https://cynsms.online/sms/api';
+```
+// SMS Body
+```php
+$sms = 'test message from Cyn SMS';
+```
+// Unicode SMS
+```php
+$unicode = '1'; //For Unicode message
+```
+// Voice SMS
+```php
+$voice = '1'; //For voice message
+```
+// MMS SMS
+```php
+$mms = '1'; //For mms message
+$media_url = 'https://yourmediaurl.com'; //Insert your media url
+```
+// Schedule SMS
+```php
+$schedule_date = '09/17/2018 10:20 AM'; //Date like this format: m/d/Y h:i A
+```
