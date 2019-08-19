@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: Custom Login and Registration In Laravel Part One
+title: Custom Login and Registration In Laravel Part 1
 ---
 ## Custom Login and Registration In Laravel
 
