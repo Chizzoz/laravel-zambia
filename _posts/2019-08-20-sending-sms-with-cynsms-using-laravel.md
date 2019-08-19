@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Sending Sms with Cynsms Using laravel
 ---
 ## Sending Sms with Cynsms Using laravel
