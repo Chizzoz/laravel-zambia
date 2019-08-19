@@ -23,8 +23,20 @@ Now lets dive into our project. Am sure you have created your laravel project.
 
 ### Step 1
 
-We are going to create our database  ```demologin``` am sure you are familier with xampp and phpmyadmin
+We are going to create our database  ```demologin``` am sure you are familier with xampp and phpmyadmin.
 
+### Step 2
+
+We are going to configur our ```.env``` to connect to the database ``.env`` is found in your Laravel Project.
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=demologin
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
 
 
