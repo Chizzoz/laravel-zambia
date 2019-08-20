@@ -26,9 +26,6 @@ The first thing we need to do is install the Cynsms SDK which will provide the n
 
 
 ### Prerequisites
-
-To run Cyn SMS API you have to install Cyn SMS Application on your server. 
-For more details please visit: [Cyn SMS](https://cynsms.online/)
 ```
 php >=5.6
 Cyn SMS - Bulk SMS Application For Markting
@@ -60,7 +57,7 @@ require 'vendor/autoload.php';
 use CynSMS\CynSMSAPI;
 ```
 ### Step 2:
-set your API_KEY from `https://cynsms.online/sms-api/info` 
+set your API_KEY from `https://console.cynsms.online/sms-api/info` 
 ```php
 $api_key = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
 ```
@@ -78,8 +75,8 @@ $destination = '8801810000000';
 You have to must include Country code at beginning of the phone number.  
 
 ### Step 5:
-Replace your Install URL like `https://mywebhost.com/sms/api` with `https://cynsms.online/`
-`sms/api` is mandatory on your install url
+Replace api URL like `https://mywebhost.com/sms/api` with `https://console.cynsms.online/`
+`sms/api` 
 
 ```php
 $url = 'https://cynsms.online/sms/api';
