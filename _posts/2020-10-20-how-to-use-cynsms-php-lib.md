@@ -84,3 +84,31 @@ Open ```Settings``` from ```File``` menu.
 ![Run Test Project - Step 1](https://apidocs.io/illustration/php?step=openSettings&workspaceFolder=CynSMS%20API-PHP)
 
 Select ```PHP``` from within ```Languages & Frameworks```
+
+![Run Test Project - Step 2](https://apidocs.io/illustration/php?step=setInterpreter0&workspaceFolder=CynSMS%20API-PHP)
+
+Browse for Interpreters near the ```Interpreter``` option and choose your interpreter.
+
+![Run Test Project - Step 3](https://apidocs.io/illustration/php?step=setInterpreter1&workspaceFolder=CynSMS%20API-PHP)
+
+Once the interpreter is selected, click ```OK```
+
+![Run Test Project - Step 4](https://apidocs.io/illustration/php?step=setInterpreter2&workspaceFolder=CynSMS%20API-PHP)
+
+To run your project, right click on your PHP file inside your Test project and click on ```Run```
+
+![Run Test Project - Step 5](https://apidocs.io/illustration/php?step=runProject&workspaceFolder=CynSMS%20API-PHP)
+
+![Run Test Project - Step 2](https://apidocs.io/illustration/php?step=setInterpreter0&workspaceFolder=CynSMS%20API-PHP)
+
+Browse for Interpreters near the ```Interpreter``` option and choose your interpreter.
+
+![Run Test Project - Step 3](https://apidocs.io/illustration/php?step=setInterpreter1&workspaceFolder=CynSMS%20API-PHP)
+
+Once the interpreter is selected, click ```OK```
+
+![Run Test Project - Step 4](https://apidocs.io/illustration/php?step=setInterpreter2&workspaceFolder=CynSMS%20API-PHP)
+
+To run your project, right click on your PHP file inside your Test project and click on ```Run```
+
+![Run Test Project - Step 5](https://apidocs.io/illustration/php?step=runProject&workspaceFolder=CynSMS%20API-PHP)
