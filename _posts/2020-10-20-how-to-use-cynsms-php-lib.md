@@ -133,3 +133,22 @@ API client can be initialized as following.
 
 $client = new CynSMSAPILib\CynSMSAPIClient();
 ```
+# Class Reference
+
+## <a name="list_of_controllers"></a>List of Controllers
+
+* [APIController](#api_controller)
+
+## <a name="api_controller"></a>![Class: ](https://apidocs.io/img/class.png ".APIController") APIController
+
+### Get singleton instance
+
+The singleton instance of the ``` APIController ``` class can be accessed from the API Client.
+
+```php
+$client = $client->getClient();
+```
+
+### <a name="create_send_sms"></a>![Method: ](https://apidocs.io/img/method.png ".APIController.createSendSMS") createSendSMS
+
+> TODO: Add a method description
