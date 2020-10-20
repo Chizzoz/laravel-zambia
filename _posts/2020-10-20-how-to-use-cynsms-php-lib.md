@@ -46,3 +46,26 @@ Click on ```Open``` in PhpStorm to browse to your generated SDK directory and th
 
 ![Open project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=openProject0&workspaceFolder=CynSMS%20API-PHP)     
 
+### 2. Add a new Test Project
+
+Create a new directory by right clicking on the solution name as shown below:
+
+![Add a new project in PHPStorm - Step 1](https://apidocs.io/illustration/php?step=createDirectory&workspaceFolder=CynSMS%20API-PHP)
+
+Name the directory as "test"
+
+![Add a new project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=nameDirectory&workspaceFolder=CynSMS%20API-PHP)
+   
+Add a PHP file to this project
+
+![Add a new project in PHPStorm - Step 3](https://apidocs.io/illustration/php?step=createFile&workspaceFolder=CynSMS%20API-PHP)
+
+Name it "testSDK"
+
+![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?step=nameFile&workspaceFolder=CynSMS%20API-PHP)
+
+Depending on your project setup, you might need to include composer's autoloader in your PHP code to enable auto loading of classes.
+
+```PHP
+require_once "../vendor/autoload.php";
+```
