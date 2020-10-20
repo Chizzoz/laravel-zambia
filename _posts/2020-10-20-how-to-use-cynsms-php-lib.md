@@ -69,3 +69,18 @@ Depending on your project setup, you might need to include composer's autoloader
 ```PHP
 require_once "../vendor/autoload.php";
 ```
+It is important that the path inside require_once correctly points to the file ```autoload.php``` inside the vendor directory created during dependency installations.
+
+![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?step=projectFiles&workspaceFolder=CynSMS%20API-PHP)
+
+After this you can add code to initialize the client library and acquire the instance of a Controller class. Sample code to initialize the client library and using controller methods is given in the subsequent sections.
+
+### 3. Run the Test Project
+
+To run your project you must set the Interpreter for your project. Interpreter is the PHP engine installed on your computer.
+
+Open ```Settings``` from ```File``` menu.
+
+![Run Test Project - Step 1](https://apidocs.io/illustration/php?step=openSettings&workspaceFolder=CynSMS%20API-PHP)
+
+Select ```PHP``` from within ```Languages & Frameworks```
