@@ -32,3 +32,17 @@ CURL used to include a list of accepted CAs, but no longer bundles ANY CA certs.
 ; absolute path.
 ;curl.cainfo =
 ```
+## How to Use
+
+The following section explains how to use the CynSMSAPI library in a new project.
+
+### 1. Open Project in an IDE
+
+Open an IDE for PHP like PhpStorm. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.
+
+![Open project in PHPStorm - Step 1](https://apidocs.io/illustration/php?step=openIDE&workspaceFolder=CynSMS%20API-PHP)
+
+Click on ```Open``` in PhpStorm to browse to your generated SDK directory and then click ```OK```.
+
+![Open project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=openProject0&workspaceFolder=CynSMS%20API-PHP)     
+
