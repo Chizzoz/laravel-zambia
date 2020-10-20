@@ -112,3 +112,24 @@ Once the interpreter is selected, click ```OK```
 To run your project, right click on your PHP file inside your Test project and click on ```Run```
 
 ![Run Test Project - Step 5](https://apidocs.io/illustration/php?step=runProject&workspaceFolder=CynSMS%20API-PHP)
+
+## How to Test
+
+Unit tests in this SDK can be run using PHPUnit. 
+
+1. First install the dependencies using composer including the `require-dev` dependencies.
+2. Run `vendor\bin\phpunit --verbose` from commandline to execute tests. If you have 
+   installed PHPUnit globally, run tests using `phpunit --verbose` instead.
+
+You can change the PHPUnit test configuration in the `phpunit.xml` file.
+
+## Initialization
+
+### 
+
+API client can be initialized as following.
+
+```php
+
+$client = new CynSMSAPILib\CynSMSAPIClient();
+```
