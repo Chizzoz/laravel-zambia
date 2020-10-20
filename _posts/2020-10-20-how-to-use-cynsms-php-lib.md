@@ -152,3 +152,77 @@ $client = $client->getClient();
 ### <a name="create_send_sms"></a>![Method: ](https://apidocs.io/img/method.png ".APIController.createSendSMS") createSendSMS
 
 > TODO: Add a method description
+
+```php
+function createSendSMS(
+        $apiKey,
+        $to,
+        $sms,
+        $from)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| apiKey |  ``` Required ```  ``` DefaultValue ```  | set your API_KEY from http://sms.cynojine.com/sms-api/info (user panel) |
+| to |  ``` Required ```  ``` DefaultValue ```  | the number we are sending to - Any phone number |
+| sms |  ``` Required ```  | SMS Body |
+| from |  ``` Required ```  | Change the from number below. It can be a valid phone number or a String |
+
+
+
+#### Example Usage
+
+```php
+$apiKey = 'xxxxxxxxxxxxx';
+$to = '260986';
+$sms = 'sms';
+$from = 'from';
+
+$result = $client->createSendSMS($apiKey, $to, $sms, $from);
+
+```
+
+
+### <a name="get_balancecheck"></a>![Method: ](https://apidocs.io/img/method.png ".APIController.getBALANCECHECK") getBALANCECHECK
+
+> Checking SMS Balance
+
+
+```php
+function getBALANCECHECK(
+        $options,
+        $queryParameters = null)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| apiKey |  ``` Required ```  | Get your account balance |
+| response |  ``` Required ```  ``` DefaultValue ```  | Json Responce |
+| queryParameters | ``` Optional ``` | Additional optional query parameters are supported by this method |
+
+
+
+#### Example Usage
+
+```php
+$apiKey = 'api_key';
+$collect['apiKey'] = $apiKey;
+
+$response = 'json';
+$collect['response'] = $response;
+
+// key-value map for optional query parameters
+$queryParams = array('key' => 'value');
+
+
+$client->getBALANCECHECK($collect, $queryParams, );
+
+```
+
+
+[Back to List of Controllers](#list_of_controllers)
+
