@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: How To Use CynSMS PHP Lib
 ---
 # Getting started
@@ -216,6 +216,3 @@ $client->getBALANCECHECK($collect, $queryParams, );
 
 
 [Back to List of Controllers](#list_of_controllers)
-
-
-
