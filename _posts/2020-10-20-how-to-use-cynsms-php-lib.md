@@ -19,3 +19,16 @@ Open command prompt and type ```composer --version```. This should display the c
 
 ![Building SDK - Step 1](https://apidocs.io/illustration/php?step=installDependencies&workspaceFolder=CynSMS%20API-PHP)
 
+### [For Windows Users Only] Configuring CURL Certificate Path in php.ini
+
+CURL used to include a list of accepted CAs, but no longer bundles ANY CA certs. So by default it will reject all SSL certificates as unverifiable. You will have to get your CA's cert and point curl at it. The steps are as follows:
+
+1. Download the certificate bundle (.pem file) from [https://curl.haxx.se/docs/caextract.html](https://curl.haxx.se/docs/caextract.html) on to your system.
+2. Add curl.cainfo = "PATH_TO/cacert.pem" to your php.ini file located in your php installation. “PATH_TO” must be an absolute path containing the .pem file.
+
+```ini
+[curl]
+; A default value for the CURLOPT_CAINFO option. This is required to be an
+; absolute path.
+;curl.cainfo =
+```
