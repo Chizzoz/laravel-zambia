@@ -32,6 +32,7 @@ CURL used to include a list of accepted CAs, but no longer bundles ANY CA certs.
 ; absolute path.
 ;curl.cainfo =
 ```
+
 ## How to Use
 
 The following section explains how to use the CynSMSAPI library in a new project.
@@ -69,6 +70,7 @@ Depending on your project setup, you might need to include composer's autoloader
 ```PHP
 require_once "../vendor/autoload.php";
 ```
+
 It is important that the path inside require_once correctly points to the file ```autoload.php``` inside the vendor directory created during dependency installations.
 
 ![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?step=projectFiles&workspaceFolder=CynSMS%20API-PHP)
@@ -84,20 +86,6 @@ Open ```Settings``` from ```File``` menu.
 ![Run Test Project - Step 1](https://apidocs.io/illustration/php?step=openSettings&workspaceFolder=CynSMS%20API-PHP)
 
 Select ```PHP``` from within ```Languages & Frameworks```
-
-![Run Test Project - Step 2](https://apidocs.io/illustration/php?step=setInterpreter0&workspaceFolder=CynSMS%20API-PHP)
-
-Browse for Interpreters near the ```Interpreter``` option and choose your interpreter.
-
-![Run Test Project - Step 3](https://apidocs.io/illustration/php?step=setInterpreter1&workspaceFolder=CynSMS%20API-PHP)
-
-Once the interpreter is selected, click ```OK```
-
-![Run Test Project - Step 4](https://apidocs.io/illustration/php?step=setInterpreter2&workspaceFolder=CynSMS%20API-PHP)
-
-To run your project, right click on your PHP file inside your Test project and click on ```Run```
-
-![Run Test Project - Step 5](https://apidocs.io/illustration/php?step=runProject&workspaceFolder=CynSMS%20API-PHP)
 
 ![Run Test Project - Step 2](https://apidocs.io/illustration/php?step=setInterpreter0&workspaceFolder=CynSMS%20API-PHP)
 
@@ -133,6 +121,8 @@ API client can be initialized as following.
 
 $client = new CynSMSAPILib\CynSMSAPIClient();
 ```
+
+
 # Class Reference
 
 ## <a name="list_of_controllers"></a>List of Controllers
@@ -152,6 +142,7 @@ $client = $client->getClient();
 ### <a name="create_send_sms"></a>![Method: ](https://apidocs.io/img/method.png ".APIController.createSendSMS") createSendSMS
 
 > TODO: Add a method description
+
 
 ```php
 function createSendSMS(
@@ -225,4 +216,6 @@ $client->getBALANCECHECK($collect, $queryParams, );
 
 
 [Back to List of Controllers](#list_of_controllers)
+
+
 
