@@ -1,0 +1,20 @@
+repo_name: Chizzoz/laravel-zambia
+report_id: 681339579f380fe772be539f0559a598
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-11T17:04:15+00:00'
+requested_by: Chizzoz
+provider: github
+branch: master
+detected_tools_count: 1
+tools:
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Chizzoz/laravel-zambia
+  detection_source: Repo Metadata
